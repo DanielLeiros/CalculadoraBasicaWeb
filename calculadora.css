@@ -1,0 +1,37 @@
+body {
+  background-image: url("https://picsum.photos/200/300/?random");
+
+  background-size: 300px 300px;
+}
+.calcdiv{
+  outline: 2px solid grey;
+  position: fixed;
+  top: 25%;
+  left: 33%;
+  background-color: #bfc3c9;
+  width: 400px;
+  height: 500px;
+}
+
+#operacaoI{
+  position: fixed;
+  margin: 150px 0 0 75px;
+
+}
+#operacaoB{
+  position: fixed;
+  margin: 175px 0 0 150px;
+
+}
+#calcp {
+  font-family: courier;
+  font-size:15px;
+  position: fixed;
+  margin: 80px 0 0 75px;
+}
+
+#out {
+  position: fixed;
+  margin: 250px 0 0 175px;
+
+}
