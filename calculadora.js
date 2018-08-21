@@ -7,7 +7,7 @@ function calcular(){
   var rdy=0;
 
   for(var i = 0; i < content.length; i++){
-    if(content[i] =='/' || content[i] =='-' || content[i] =='+' || content[i] =='*' && rdy ==0){
+    if(content[i] =='/' || content[i] =='-' || content[i] =='+' || content[i] =='*' || content[i] =='%' || content[i] =='^' && rdy ==0){
       op = content[i];
       rdy = 1;
     }else if(rdy == 1){
@@ -19,6 +19,7 @@ function calcular(){
   }
   var x = +val1;
   var y = +val2;
+  document.getElementById('out').style.display = "inline";
   if(op == "+"){
     document.getElementById("out").innerHTML = x+y;
   }else if(op == "-"){
@@ -27,6 +28,10 @@ function calcular(){
     document.getElementById("out").innerHTML =x/y;
   }else if(op=="*"){
     document.getElementById("out").innerHTML = x*y;
+  }else if(op=="%"){
+    document.getElementById("out").innerHTML = x%y;
+  }else if(op=="^"){
+    document.getElementById("out").innerHTML = x**y;
   }else{
     alert("Tente realizar corretamente a operação!")
   }

@@ -11,13 +11,14 @@
   </head>
   <body onload="zerar()">
     <main>
-      <div class="calcdiv">
-        <p id="calcp">Para realizar a operação, digite o <br> primeiro valor, seguido da opera-<br> ção (+,-,*,/)
+      <div id="calcdiv">
+        <p id="calcp">Para realizar a operação, digite o <br> primeiro valor, seguido da opera-<br> ção (+,-,*,/,^,%)
            e o segundo valor:</p>
         <form>
-          <input id="operacaoI" type="text" name="operacao" placeholder="digite aqui a operação" pattern="(?=.*\d)(?=.*[+,-,*,/]).{3,}">
+          <input id="operacaoI" type="text" name="operacao" placeholder="digite aqui a operação" pattern="(?=.*\d)(?=.*[+,-,*,/,^,%]).{3,}">
           <br>
           <button id ="operacaoB" type="button" name="button" onclick="calcular()">Calcular</button>
+          <hr><br>
           <output id="out" name="result"></output>
         </form>
       </div>
